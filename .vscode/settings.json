@@ -1,0 +1,10 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-25",
+            "path": "/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home",
+            "default": true
+        }
+    ]
+}

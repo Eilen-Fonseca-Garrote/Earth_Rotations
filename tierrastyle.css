@@ -1,0 +1,142 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: system-ui, sans-serif;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ui {
+  position: absolute;
+  z-index: 10;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.country-picker {
+  position: absolute;
+  z-index: 10;
+  top: 18px;
+  left: 50%;
+  display: flex;
+  width: min(360px, calc(100% - 32px));
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  background: rgba(5, 15, 28, 0.82);
+  backdrop-filter: blur(8px);
+}
+
+.country-picker label {
+  color: #b9d8e8;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+#countrySelect {
+  min-width: 0;
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #31536a;
+  border-radius: 6px;
+  background: #102334;
+  color: #fff;
+}
+
+.earthquake-panel {
+  position: absolute;
+  z-index: 11;
+  right: 16px;
+  bottom: 16px;
+  width: min(390px, calc(100% - 32px));
+  max-height: min(58vh, 540px);
+  overflow: auto;
+  padding: 16px;
+  border: 1px solid rgba(126, 211, 255, 0.28);
+  border-radius: 10px;
+  background: rgba(5, 15, 28, 0.92);
+  color: #eef8ff;
+  backdrop-filter: blur(10px);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panel-heading h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#closePanel {
+  padding: 5px 8px;
+  border: 1px solid #31536a;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.earthquake-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.earthquake-item strong {
+  color: #ffd166;
+}
+
+.earthquake-item small {
+  display: block;
+  margin-top: 4px;
+  color: #b9d8e8;
+  line-height: 1.4;
+}
+
+.panel-status {
+  color: #b9d8e8;
+  font-size: 13px;
+}
+
+.ui button {
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+.credits {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #ddd;
+  font-size: 13px;
+}

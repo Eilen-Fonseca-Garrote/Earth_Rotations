@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conoce TerraQuake y explora nuestro planeta a través de un mapa interactivo de actividad sísmica."
+    />
+    <meta name="theme-color" content="#f7f8f5" />
+    <title>TerraQuake | Explora nuestro planeta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="TerraQuake, inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.6" />
+            <path d="M4.5 16h7l3-6 4 12 3-6h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span>terraquake</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link active" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#proyecto">El proyecto</a>
+      </nav>
+
+      <a class="header-cta" href="../index.html">Explorar el mapa <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> La Tierra, en perspectiva</p>
+          <h1>Un planeta en movimiento. <span>Un mundo por descubrir.</span></h1>
+          <p class="hero-description">
+            Acércate a la actividad sísmica de nuestro planeta con una experiencia
+            visual e interactiva. Explora el mapa, recorre distintas regiones y
+            descubre cómo se conecta cada lugar.
+          </p>
+          <div class="hero-actions">
+            <a id="startSimulationBtn" class="button button-primary" href="../index.html">
+              Explorar el mapa
+              <span class="button-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="text-link" href="#proyecto">Conoce TerraQuake <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">◎</span>
+            <span>Una nueva forma de observar nuestro planeta</span>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Ilustración de la Tierra vista desde el espacio">
+          <div class="art-label art-label-top"><span></span> UNA MIRADA GLOBAL</div>
+          <div class="globe-halo"></div>
+          <div class="globe">
+            <svg class="world-map" viewBox="0 0 600 600" aria-hidden="true">
+              <defs>
+                <clipPath id="globeClip">
+                  <circle cx="300" cy="300" r="258" />
+                </clipPath>
+                <linearGradient id="globeShade" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#5ec8ba" stop-opacity=".76" />
+                  <stop offset="1" stop-color="#16786f" stop-opacity=".82" />
+                </linearGradient>
+              </defs>
+              <circle cx="300" cy="300" r="258" fill="#153d46" />
+              <g clip-path="url(#globeClip)" fill="url(#globeShade)" stroke="#a7e2ce" stroke-opacity=".48" stroke-width="2">
+                <path d="m94 137 28-19 25 5 13-13 24 10 17-4 17 16-7 13-22 5-8 18-18 5-8 25-17 13-4 24-15 5-12 26-15-10-2-22-13-15 9-24-8-17 13-21-10-15 15-18Z" />
+                <path d="m185 291 18-16 21 5 13 14-4 19 14 20-5 23-15 16-3 31-17 34-12 28-13-9-5-30-12-18 5-30-11-19 4-29-12-20 14-19Z" />
+                <path d="m260 117 22-13 25 7 14-8 29 12 17-2 22 17 25 3 14 19 24 8 4 16-24 6-11 17-28-1-11 13-24-6-10 14-21-10-18 6-11-15-24-4-7-16-18-10-9-29-18-12 12-12Z" />
+                <path d="m326 236 23-9 24 8 19 21 19 4 8 20 16 9 4 27-13 21-8 27-20 12-8 29-20 12-10-15-17-1-11-22-16-10 5-22-15-20 9-25-7-20 18-17Z" />
+                <path d="m458 164 19-8 20 11 18-1 18 16-8 14-21 2-13 15-20-6-14-16 1-27Z" />
+                <path d="m493 231 15-5 16 12-2 18-13 7-14-12-2-20Z" />
+                <path d="m89 243 10-5 10 11-7 14-12-5-1-15Z" />
+                <path d="m246 93 10-7 13 5-4 11-14 2-5-11Z" />
+              </g>
+              <circle cx="300" cy="300" r="258" fill="none" stroke="#c4eadf" stroke-opacity=".38" stroke-width="2" />
+              <path d="M72 300h456M300 42c-73 68-111 158-111 258s38 190 111 258M300 42c73 68 111 158 111 258s-38 190-111 258" fill="none" stroke="#b7e3d9" stroke-opacity=".12" stroke-width="1.5" />
+            </svg>
+            <span class="globe-point point-one"></span>
+            <span class="globe-point point-two"></span>
+            <span class="globe-point point-three"></span>
+          </div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-label art-label-bottom"><span class="coordinate-mark">⌖</span> TIERRA · EXPLORACIÓN INTERACTIVA</div>
+          <div class="decorative-star star-one">✳</div>
+          <div class="decorative-star star-two">✳</div>
+        </div>
+      </section>
+
+      <section class="intro" id="proyecto">
+        <div class="intro-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Conoce TerraQuake</p>
+          <h2>Entender el planeta empieza por <span>mirarlo de cerca.</span></h2>
+        </div>
+        <p class="intro-description">
+          TerraQuake convierte información sísmica en una experiencia sencilla
+          para explorar. Navega por el globo y consulta la actividad de distintas
+          regiones desde un mismo lugar.
+        </p>
+        <a class="intro-link" href="../index.html">Comenzar a explorar <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <footer class="site-footer">
+        <a class="footer-brand" href="#inicio">terraquake</a>
+        <span>Explora la Tierra desde una nueva perspectiva.</span>
+        <a class="footer-top" href="#inicio">Volver al inicio ↑</a>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
