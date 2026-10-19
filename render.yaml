@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: earth-rotations
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: "1573"
+      - key: SPRING_DATA_MONGODB_URI
+        sync: false
